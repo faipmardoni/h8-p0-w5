@@ -3,7 +3,6 @@ function deepSum (arr) {
   if (arr.length===0) return "No number";
   let result = 0;
   for (let i = 0; i < arr.length; i++) {
-    // console.log(arr[i].length)
     for (let j = 0; j < arr[i].length; j++) {
       for (let k = 0; k < arr[i][j].length; k++) {
         result += arr[i][j][k];
