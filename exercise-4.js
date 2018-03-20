@@ -1,8 +1,11 @@
 function graduates (students) {
   let obj = {};
   for (let i = 0; i < students.length; i++) {
+    obj[students[i].class] = [];
+  }
+  for (let i = 0; i < students.length; i++) {
     if (students[i].score >= 75) {
-      obj[students[i].class] = [({name: students[i].name, score: students[i].score})];
+      obj[students[i].class].push({name: students[i].name, score: students[i].score});
     }
   }
   return obj
