@@ -6,7 +6,6 @@ function highestScore (students) {
       obj[students[i].class] = {};
         obj[students[i].class].name = students[i].name;
         obj[students[i].class].score = students[i].score;
-        max = students[i].score
     }else {
       if (students[i].score > max) {
         obj[students[i].class].name = students[i].name;
