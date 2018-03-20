@@ -1,4 +1,4 @@
-function highestScore (students) {
+function highestScore(students) {
   let obj = {};
   let max = 0;
   for (let i = 0; i < students.length; i++) {
@@ -7,7 +7,7 @@ function highestScore (students) {
       obj[students[i].class].name = students[i].name;
       obj[students[i].class].score = students[i].score;
       max = students[i].score;
-    }else if (students[i].score > max) {
+    } else if (students[i].score > max) {
       obj[students[i].class].name = students[i].name;
       obj[students[i].class].score = students[i].score;
       max = students[i].score;
